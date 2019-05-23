@@ -52,13 +52,6 @@ public class Login {
             if (checkPass(uName, uPwdE1)) break;
         }
 
-//        TODO delete
-//        // In-code define --> root
-//        if (uName.equals("root")) {
-//            RootLogin rootLogin = new RootLogin();
-//            rootLogin.main(in, conn);
-//        }
-
         User usr = new User(uName, uPwdE, in, conn);
         usr.main();
 
